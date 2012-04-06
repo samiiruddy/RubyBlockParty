@@ -1,3 +1,5 @@
+**** This project is a simple generator that draws text from a database randomly and displays it on screen. My friend @Cbeck527 has made a similar one in PHP, this was just Ruby on Rails practice for me. The database used was SQLite3 and the site allows users to add their own text into the database.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
