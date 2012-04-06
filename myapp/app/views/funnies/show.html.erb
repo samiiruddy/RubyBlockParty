@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Joke:</b>
+  <%= @funny.joke %>
+</p>
+
+
+<%= link_to 'Edit', edit_funny_path(@funny) %> |
+<%= link_to 'Back', funnies_path %>

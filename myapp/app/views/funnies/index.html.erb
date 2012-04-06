@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag    "application", :media => "all" %>
+
+<div class = "container">
+
+<h2>    
+#ThingsIdRatherDoThanGoToMayfest
+</h2>
+  
+  <br>
+<% @funnies.each do |funny| %>
+  
+    <h1><%= funny.joke %></h1>
+
+<br>
+
+<% end %>
+
+<br>
+<%= link_to 'Have an idea?', new_funny_path %>
+
+</div>
+

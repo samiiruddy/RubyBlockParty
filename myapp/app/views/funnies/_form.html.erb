@@ -1,0 +1,21 @@
+<%= form_for(@funny) do |f| %>
+  <% if @funny.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funny.errors.count, "error") %> prohibited this funny from being saved:</h2>
+
+      <ul>
+      <% @funny.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :joke %><br />
+    <%= f.text_field :joke %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
